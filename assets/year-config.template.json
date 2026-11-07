@@ -1,0 +1,40 @@
+{
+  "_instructions": "Copy this file per case (e.g. year-config-<year>.json). Fill every value from an official source for the selected tax year and record the URL and date checked. Leave unverifiable values null; the script refuses to run with nulls it needs.",
+  "tax_year": null,
+  "checked_on": null,
+  "employee_allowance":            { "value": null, "source": null },
+  "special_expenses_allowance":    { "value": null, "source": null, "note": "single filer value" },
+  "basic_allowance":               { "value": null, "source": null },
+  "tariff_zones": {
+    "source": null,
+    "note": "Transcribe § 32a Abs. 1 EStG for the year. Types: 'zero' (tax 0), 'quadratic' ((a*y + b)*y + c with y = (zvE - base) / 10000), 'linear' (rate*zvE - minus).",
+    "zones": [
+      { "up_to": null, "type": "zero" },
+      { "up_to": null, "type": "quadratic", "base": null, "a": null, "b": null, "c": 0 },
+      { "up_to": null, "type": "quadratic", "base": null, "a": null, "b": null, "c": null },
+      { "up_to": null, "type": "linear", "rate": null, "minus": null },
+      { "up_to": null, "type": "linear", "rate": null, "minus": null }
+    ]
+  },
+  "solidarity": { "rate": null, "free_limit": null, "mitigation_rate": null, "source": null },
+  "pension_deduction_share":       { "value": null, "source": null, "note": "share of (employee + employer) pension contributions; employer share is then subtracted" },
+  "health_sickpay_reduction":      { "value": null, "source": null, "note": "e.g. fraction removed from basic health contribution when entitled to sick pay" },
+  "other_insurance_cap_employee":  { "value": null, "source": null },
+  "commute_rate_tiers":            { "tiers": [ { "from_km": 1, "rate": null } ], "source": null },
+  "home_office_day_rate":          { "value": null, "source": null },
+  "home_office_max_days":          { "value": null, "source": null },
+  "meal_allowance_rates":          { "over_8h": null, "arrival_departure": null, "full_day": null, "source": null },
+  "meal_allowance_rule_days_per_week": { "value": null, "source": null },
+  "meal_allowance_rule_months":    { "value": null, "source": null },
+  "vehicle_km_rates":              { "car": null, "other_motor_vehicle": null, "source": null },
+  "telecom_flat_share":            { "value": null, "source": null },
+  "telecom_flat_cap_month":        { "value": null, "source": null },
+  "account_fee_flat":              { "value": null, "source": null, "note": "administrative practice" },
+  "application_flat_rates":        { "online": null, "postal": null, "source": null, "note": "administrative practice, not statutory" },
+  "gwg_limit":                     { "net": null, "gross": null, "source": null },
+  "saver_allowance":               { "value": null, "source": null },
+  "donation_simple_proof_limit":   { "value": null, "source": null },
+  "reasonable_burden_rates":       { "bands": null, "source": null },
+  "household_services_rate_caps":  { "services_rate": null, "services_cap": null, "trades_rate": null, "trades_cap": null, "source": null },
+  "filing_deadlines":              { "self_filed": null, "with_advisor": null, "voluntary_until": null, "source": null }
+}

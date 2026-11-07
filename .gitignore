@@ -1,0 +1,6 @@
+# Personal tax data - never commit
+case*.json
+year-config-*.json
+*.pdf
+.DS_Store
+__pycache__/
